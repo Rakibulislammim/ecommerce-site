@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="this is an e-commerce project for making rakib express">
+	<title>E-commerce Project</title>
+	<!-- font awesome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+   
+    <!-- navbar start here -->
+	<i class="fas fa-bars fa-2x" id="menu-icon"></i>
+	<nav id="menu" class="hidden">
+		<ul class="nav-upper flex-space-around">
+			<li class="nav-list">
+				<a href="index.html" class="nav-link">Home</a>
+			</li>
+            <li class="nav-list">
+				<a href="register.html" class="nav-link">Register</a>
+			</li>
+			<li class="nav-list">
+				<a href="login.html" class="nav-link">Login</a>
+			</li>
+			<li class="nav-list">
+				<a href="index.html" class="nav-link">Log Out</a>
+			</li>
+			<li class="nav-list">
+				<a href="contact.html" class="nav-link">Contact</a>
+			</li>
+			<li class="nav-list">
+				<a href="profile.html" class="nav-link">
+					<img class="profile-icon" src="img/bg.jpg" alt="profile icon">
+				</a>
+			</li>
+		</ul>
+
+
+		<ul class="nav-lower flex-space-around">
+			<li class="nav-list">
+				<a href="index.html" class="nav-brand nav-link">Rakib Express</a>
+			</li>
+			<li class="nav-list">
+				<a href="index.html" class="nav-link">
+					<span><i class="fa-solid
+				    fa-cart-shopping"></i></span>
+					Card 2 products - $124.40
+				</a>
+			</li>
+		</ul>
+	  </nav>
+	<!-- navbar ends here -->
+    <main>
+        <div class="card flex-center">
+          <div class="card-items">
+			<div class="card-items-heading card">
+				<h2>Shopping Cart [2 items]</h2>
+				<div class="card-items-action">
+					<label for="select">
+						<input type="checkbox" name="select" id="select">
+						Select all items
+					</label>
+					<button class="btn">
+						<i class="fas fa-trash-alt"></i>
+					</button>
+					<button class="btn">Shop More</button>
+				</div>
+			</div>
+
+			<div class="card-item card flex-space-around">
+				<input type="checkbox" name="" id="">
+				<img src="img/headphone.jpg" alt="headphone" class="card-items-img">
+				<div class="card-items-dest">
+					<h3 class="product-name">Sony v-4 Headphone</h3>
+					<h4 class="product-price">Price: $225.99</h4>
+					<p class="card-item-shipping">Free Shipping</p>
+				</div>
+				<div class="card-items-action">
+					<button class="btn"><i class="fas 
+					fa-trash-alt"></i></button>
+					<div>
+						<button class="btn"><i class="fas 
+						fa-add"></i></button>
+						<span>3</span>
+						<button class="btn"><i class="fas 
+						fa-minus"></i></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="card-item card flex-space-around">
+				<input type="checkbox" name="" id="">
+				<img src="img/product3.jpg" alt="product3" class="card-items-img">
+				<div class="card-items-dest">
+					<h3 class="product-name">Nike Shoes</h3>
+					<h4 class="product-price">Price: $115.99</h4>
+					<p class="card-item-shipping">Shipping Cost $2.50</p>
+				</div>
+				<div class="card-items-action">
+					<button class="btn"><i class="fas 
+					fa-trash-alt"></i></button>
+					<div>
+						<button class="btn"><i class="fas 
+						fa-add"></i></button>
+						<span>1</span>
+						<button class="btn"><i class="fas 
+						fa-minus"></i></button>
+					</div>
+				</div>
+			</div>
+		  </div>
+		  <div class="card-payment">
+			<div class="card-payment-summary card">
+				<h2>Payment Summary</h2>
+				<div>
+					<p>subtotal:</p>
+					<p>$341.44</p>
+				</div>
+				<div>
+					<p>Shipping Cost:</p>
+					<p>$2.50</p>
+				</div>
+				<div>
+					<p>Total Cost:</p>
+					<p>$344.38</p>
+				</div>
+				<button class="btn card-payment-btn">Pay Now</button>
+			</div>
+			<div class="card-payment-methods card">
+				<h2>Payment Methods</h2>
+				<div>
+					<i class="fa-brands fa-cc-visa fa-3x"></i>
+					<i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+					<i class="fa-brands fa-cc-amex fa-3x"></i>
+					<i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+					<i class="fa-brands fa-cc-paypal fa-3x"></i>
+				</div>
+			</div>
+		  </div>
+		</div>
+    </main>
+	<!-- footer start here -->
+	  <footer class="footer flex-space-around">
+		<div class="flex-space-around">
+			<label for="Subscribe">Subscribe to Newsletter: 
+	        </label>
+
+			<input type="email" id="Subscribe" name="Subscribe" class="footer-input"
+			placeholder="Your Email Address">
+			<button class="btn btn-subscribe">Subscribe</button>
+		</div>
+		<div>
+			<p>&copy; Copyright 2023 Rakib Express.All right rserved</p>
+		</div>
+	  </footer>
+	<!-- footer ends here -->
+	<script src="scripts/index.js"></script>
+
+</body>
+</html>
